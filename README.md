@@ -9,15 +9,16 @@ This interface relies of two files. One of which handles the result of your meas
 To begin you'll need to point the code at your NumPy arrays or .fits files and also define where you're going to save your pickle files.
 
 The program reads in either NumPy arrays or .fits files. Upon running the GUI will appear in a figure window. You will observe that the first image appears with an array of buttons. In order to measure a feature you will need to;
+
 1. Browse through the Images using the forward and backwards buttons. You can either move 1 image at a time or 10 frames at a time.
-2. Upon finding a feature to measure, press 'Start Measure', this negins the list where the points will be kept.
-..* When you click 'Start Measure', the program remembers the Box you're viewing the feature in (using the python selector tool) and will return to this box later on.
-..* Click 'Measure' this initalises the 4 measuring clicks
-..* Next we have the length selections. Click the bottom and then the top of the feature. The bottom will remain constant in y but will vary in x as further frames are measured.
-..* The viewing box will them zoom in on the width of the feature. A guiding line will appear across the box which is at the mid-point between top and bottom and perpendicular to this line. At this point click to measure the width.
-..* Once the second click for the width has been make the viewbox will return to the original one. Click 'Confirm', at this point the 4 clicks and time will be appended to the list.
-3. If you make a mistake, click 'Measure' again and you can make the clicks again. Keep an eye on the printed output as this will tell you where you have clicked and which click you're on.
-4. You can save multiple features to the same pickle file, when you wish to start measuring a new feature, click 'Start Measure' again.
+1. Upon finding a feature to measure, press 'Start Measure', this negins the list where the points will be kept.
+    * When you click 'Start Measure', the program remembers the Box you're viewing the feature in (using the python selector tool) and will return to this box later on.
+    * Click 'Measure' this initalises the 4 measuring clicks
+    * Next we have the length selections. Click the bottom and then the top of the feature. The bottom will remain constant in y but will vary in x as further frames are measured.
+    * The viewing box will them zoom in on the width of the feature. A guiding line will appear across the box which is at the mid-point between top and bottom and perpendicular to this line. At this point click to measure the width.
+    * Once the second click for the width has been make the viewbox will return to the original one. Click 'Confirm', at this point the 4 clicks and time will be appended to the list.
+1. If you make a mistake, click 'Measure' again and you can make the clicks again. Keep an eye on the printed output as this will tell you where you have clicked and which click you're on.
+1. You can save multiple features to the same pickle file, when you wish to start measuring a new feature, click 'Start Measure' again.
 
 ## Property file
 This files contains the property class and functions within it. These fuctions define the properties of your feature, length, width, velocity, inclination from normal and lifetime.
