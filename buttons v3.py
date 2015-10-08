@@ -77,7 +77,7 @@ class Index:
         plt.draw()
         
     def begin(self, event):
-        print 'START SPICULE'
+        print 'START FEATURE'
         prop_list.append(properties(axes.axis(),limb))
         print prop_list[-1]
         self.spic_no = 0
@@ -235,7 +235,7 @@ bbskip.on_clicked(callback.bbigskip)
 bprev = Button(axprev, 'Previous')
 bprev.on_clicked(callback.prev)
 
-bstart = Button(axstart, 'Start Spicule')
+bstart = Button(axstart, 'Start Feature')
 bstart.on_clicked(callback.begin)
 
 bmeas = Button(axmeas, 'Confirm')
